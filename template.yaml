@@ -210,6 +210,9 @@ Resources:
       KeyName: !Ref KeyPairWeb
       DisableApiTermination: false
       EbsOptimized: true
+      Tags:
+        - Key: key1
+          Value: value1
       UserData: 
         Fn::Base64: |
             #cloud-config
